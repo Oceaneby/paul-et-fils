@@ -1,0 +1,369 @@
+header {
+  width: 100%;
+  position: relative;
+}
+header img {
+  position: absolute;
+  width: 5%;
+}
+header p {
+  position: absolute;
+  left: 20px;
+  font-size: 5px;
+  padding-right: 350px;
+  color: white;
+}
+@media (min-width: 600px) {
+  header p {
+    font-size: 1em;
+    left: 100px;
+    top: 15px;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background: black;
+  height: 40px;
+  padding-top: 10px;
+}
+@media (min-width: 600px) {
+  header nav {
+    height: 90px;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+@media (min-width: 600px) {
+  header nav ul {
+    margin-left: 500px;
+  }
+}
+header nav li {
+  cursor: pointer;
+  font-size: 0.2em;
+  transition: 0.3 ease;
+  list-style-type: none;
+  color: white;
+  padding: 0 15px;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  header nav li {
+    font-size: 1em;
+    font-weight: lighter;
+  }
+}
+
+.main-container {
+  background: url("../img/homme-carton-camionnette.webp") fixed center/cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.main-container h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+.main-container .container__contact {
+  font-size: 0.5em;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 40%;
+  margin-top: 15px;
+}
+.main-container .container__contact h2 {
+  text-align: left;
+  font-size: 0.5em;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.main-container .container__contact p {
+  text-align: left;
+  font-size: 0.5em;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.main-container .container__devis {
+  font-size: 0.5em;
+  background-color: rgb(243, 71, 18);
+  height: 50px;
+  width: 40%;
+}
+.main-container .container__devis h2 {
+  text-align: left;
+  font-size: 0.5em;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.main-container .container__devis p {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.demenagement__introduction .demenagement__propos {
+  background: rgb(243, 71, 18);
+  height: 150px;
+}
+.demenagement__introduction .demenagement__propos h2 {
+  color: white;
+  text-align: center;
+}
+.demenagement__introduction .demenagement__propos p {
+  font-size: 0.8em;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+.demenagement__introduction .demenagement__propos .btn-propos {
+  background: black;
+  color: white;
+  border: none;
+  height: 20%;
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 40%;
+  font-size: 0.5em;
+}
+.demenagement__introduction img {
+  width: 100%;
+}
+
+.services h2 {
+  text-align: center;
+  margin: 20px;
+}
+.services .services__description {
+  background: white;
+  margin-bottom: 15px;
+  height: 400px;
+}
+.services .services__description h3 {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.services .services__description p {
+  padding-left: 15px;
+}
+.services .services__description .btn_description {
+  background: rgb(243, 71, 18);
+  border: none;
+  margin-left: 15px;
+  width: 40%;
+  font-size: 0.8em;
+  height: 35px;
+  margin-top: 30px;
+}
+.services img {
+  width: 100%;
+}
+
+.service__confiance__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service__confiance__container .service-confiance {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../img/2hommes-portent-un-meuble.webp) fixed center/cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service__confiance__container .service-confiance h2 {
+  color: white;
+}
+.service__confiance__container .service__confiance__list {
+  width: 100%;
+}
+.service__confiance__container .service__confiance__list .service__list {
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.service__confiance__container .service__confiance__list .demenagement {
+  background: black;
+  color: white;
+}
+.service__confiance__container .service__confiance__list p {
+  padding-top: 15px;
+}
+.service__confiance__container .service__confiance__list .assurance {
+  background: rgb(243, 71, 18);
+  color: white;
+}
+.service__confiance__container .service__confiance__list .recommandation {
+  background: white;
+  color: black;
+}
+
+.satisfaction__client__container h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+.satisfaction__client__container img {
+  width: 10%;
+  padding-left: 20px;
+}
+
+.satisfaction__client__avis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.satisfaction__client__avis p {
+  font-size: 0.5em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.devis__container {
+  background: rgb(243, 71, 18);
+  height: 100vh;
+}
+.devis__container .devis__infos {
+  padding-top: 40px;
+}
+.devis__container .devis__infos h2 {
+  text-align: center;
+  color: white;
+}
+.devis__container .devis__infos p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.devis__container .devis__formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.devis__container input {
+  height: 30px;
+  margin: 5px;
+  border: none;
+}
+.devis__container #btn-submit {
+  background: black;
+  color: white;
+  margin-top: 40px;
+  position: absolute;
+  left: 10px;
+  width: 80%;
+}
+
+footer {
+  background: black;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+footer img {
+  width: 10%;
+}
+footer .logo {
+  padding-right: 350px;
+  font-size: 0.5em;
+  position: absolute;
+  left: 45px;
+  top: 5px;
+  padding-top: 0;
+}
+footer .footer__container {
+  height: 100px;
+  padding-left: 15px;
+}
+footer .footer__container address {
+  padding-top: 30px;
+}
+footer .footer__container.horaire h5 {
+  margin-top: 40px;
+}
+footer .footer__social {
+  position: absolute;
+  bottom: 0px;
+}
+footer .footer__social p {
+  padding-bottom: 15px;
+  margin-top: 25px;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  background: rgba(171, 169, 169, 0.218);
+}
+
+.btn-submit-devis {
+  background-color: rgb(243, 71, 18);
+  border: none;
+  font-size: 8px;
+  width: 60px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#accueil {
+  color: rgb(243, 71, 18);
+}
+
+.carre {
+  width: 5%;
+  fill: white;
+}
+.carre.reco {
+  fill: black;
+}
+
+.chevron {
+  width: 2%;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+h5 {
+  color: white;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.reseaux {
+  fill: white;
+  width: 10%;
+  padding-right: 15px;
+  padding-left: 15px;
+  top: 50px;
+}/*# sourceMappingURL=main.css.map */

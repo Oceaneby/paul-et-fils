@@ -1,0 +1,19 @@
+$orange:rgb(243, 71, 18);
+$black:black;
+$white: white;
+
+@mixin main-container{
+    text-align: left;
+    font-size: 0.5em;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+@mixin button{
+    background: $orange;
+    border: none;
+    margin-left: 15px;
+    width: 40%;
+    font-size: 0.8em;
+    height: 35px;
+    margin-top: 30px;
+}

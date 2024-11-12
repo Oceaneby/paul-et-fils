@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    background: rgba(171, 169, 169, 0.218);
+}
+.btn-submit-devis{
+    background-color: $orange;
+    border: none;
+    font-size: 8px;
+    width: 60px;
+    height: 40px;
+ 
+}
+a{
+    text-decoration: none;
+    color: $white;
+    padding: 0;
+    &:hover{
+        text-decoration: none;
+        list-style-type: none;
+    }
+}
+#accueil{
+    color: $orange;
+}
+.carre{
+    width: 5%;
+    fill: $white;
+    &.reco{
+        fill: $black;
+    }
+    
+    
+}
+.chevron{
+    width: 2%;
+    padding-right: 10px;
+    padding-left: 20px;
+    // height: 5%;
+    // font-weight: 100;
+}
+h5{
+    color: $white;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.reseaux{
+    fill: $white;
+    width: 10%;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 50px;
+}
