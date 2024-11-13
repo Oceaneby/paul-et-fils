@@ -6,18 +6,23 @@ header img {
   position: absolute;
   width: 5%;
 }
+@media (min-width: 600px) {
+  header img {
+    top: -10px;
+  }
+}
 header p {
   position: absolute;
   left: 20px;
   font-size: 5px;
-  padding-right: 350px;
+  width: 20px;
   color: white;
 }
 @media (min-width: 600px) {
   header p {
     font-size: 1em;
     left: 100px;
-    top: 15px;
+    padding-top: 5px;
   }
 }
 header nav {
@@ -26,11 +31,10 @@ header nav {
   align-items: center;
   margin: 0;
   background: black;
-  height: 40px;
-  padding-top: 10px;
 }
 @media (min-width: 600px) {
   header nav {
+    width: 100%;
     height: 90px;
   }
 }
@@ -42,7 +46,7 @@ header nav ul {
 }
 @media (min-width: 600px) {
   header nav ul {
-    margin-left: 500px;
+    margin-left: 800px;
   }
 }
 header nav li {
@@ -58,6 +62,7 @@ header nav li {
   header nav li {
     font-size: 1em;
     font-weight: lighter;
+    width: 80px;
   }
 }
 
@@ -70,10 +75,63 @@ header nav li {
   align-items: center;
   height: 90vh;
 }
+@media (min-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 600px) {
+  .main-container .container__cont {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+  .main-container .container__cont h2 {
+    text-align: left;
+    font-size: 0.5em;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .main-container .container__cont h2 {
+    font-size: 2em;
+    padding-left: 30px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .main-container .container__cont p {
+    text-align: left;
+    font-size: 0.5em;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .main-container .container__cont p {
+    font-size: 2em;
+    font-weight: lighter;
+    padding-left: 30px;
+  }
+}
 .main-container h1 {
   color: white;
   font-weight: bold;
   font-size: 1em;
+}
+@media (min-width: 600px) {
+  .main-container h1 {
+    text-align: lef;
+    font-size: 4em;
+    width: 700px;
+    padding-left: 150PX;
+  }
 }
 .main-container .container__contact {
   font-size: 0.5em;
@@ -83,51 +141,76 @@ header nav li {
   width: 40%;
   margin-top: 15px;
 }
-.main-container .container__contact h2 {
-  text-align: left;
-  font-size: 0.5em;
-  padding-top: 15px;
-  padding-left: 10px;
-}
-.main-container .container__contact p {
-  text-align: left;
-  font-size: 0.5em;
-  padding-top: 15px;
-  padding-left: 10px;
+@media (min-width: 600px) {
+  .main-container .container__contact {
+    height: 200px;
+  }
 }
 .main-container .container__devis {
   font-size: 0.5em;
   background-color: rgb(243, 71, 18);
   height: 50px;
   width: 40%;
+  margin-top: 15px;
 }
-.main-container .container__devis h2 {
-  text-align: left;
-  font-size: 0.5em;
-  padding-top: 15px;
-  padding-left: 10px;
+@media (min-width: 600px) {
+  .main-container .container__devis {
+    height: 200px;
+  }
 }
-.main-container .container__devis p {
-  text-align: left;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 50px;
+@media (min-width: 600px) {
+  .main-container .container__devis p {
+    width: 40%;
+  }
 }
 
+@media (min-width: 600px) {
+  .demenagement__introduction {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 600px;
+  }
+}
 .demenagement__introduction .demenagement__propos {
   background: rgb(243, 71, 18);
-  height: 150px;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .demenagement__introduction .demenagement__propos {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .demenagement__introduction .demenagement__propos h2 {
   color: white;
   text-align: center;
+}
+@media (min-width: 600px) {
+  .demenagement__introduction .demenagement__propos h2 {
+    text-align: left;
+    font-size: 3em;
+    width: 50%;
+    padding-left: 110px;
+    padding-top: 100px;
+  }
 }
 .demenagement__introduction .demenagement__propos p {
   font-size: 0.8em;
   padding-left: 25px;
   padding-top: 10px;
 }
+@media (min-width: 600px) {
+  .demenagement__introduction .demenagement__propos p {
+    text-align: left;
+    width: 40%;
+    font-size: 1em;
+  }
+}
 .demenagement__introduction .demenagement__propos .btn-propos {
+  cursor: pointer;
   background: black;
   color: white;
   border: none;
@@ -137,25 +220,85 @@ header nav li {
   width: 40%;
   font-size: 0.5em;
 }
+@media (min-width: 600px) {
+  .demenagement__introduction .demenagement__propos .btn-propos {
+    width: 15%;
+    height: 40px;
+    font-size: 0.8em;
+    position: relative;
+    right: 120px;
+  }
+}
 .demenagement__introduction img {
   width: 100%;
 }
+@media (min-width: 600px) {
+  .demenagement__introduction img {
+    height: 80%;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
+@media (min-width: 600px) {
+  .services {
+    height: auto;
+  }
+}
+@media (min-width: 600px) {
+  .services .service__service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .services h2 {
   text-align: center;
   margin: 20px;
 }
+@media (min-width: 600px) {
+  .services h2 {
+    padding-bottom: 50px;
+    font-size: 4em;
+    font-weight: bold;
+  }
+}
 .services .services__description {
   background: white;
   margin-bottom: 15px;
-  height: 400px;
+}
+@media (min-width: 600px) {
+  .services .services__description {
+    height: 700px;
+    width: 80%;
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .services .services__description h3 {
   padding-left: 15px;
   padding-bottom: 20px;
 }
+@media (min-width: 600px) {
+  .services .services__description h3 {
+    font-size: 2em;
+    width: 45%;
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+}
 .services .services__description p {
   padding-left: 15px;
+}
+@media (min-width: 600px) {
+  .services .services__description p {
+    font-size: 1em;
+    width: 50%;
+    padding-left: 40px;
+  }
 }
 .services .services__description .btn_description {
   background: rgb(243, 71, 18);
@@ -165,9 +308,24 @@ header nav li {
   font-size: 0.8em;
   height: 35px;
   margin-top: 30px;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .services .services__description .btn_description {
+    width: 15%;
+    margin-left: 40px;
+  }
 }
 .services img {
   width: 100%;
+}
+@media (min-width: 600px) {
+  .services img {
+    width: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .service__confiance__container {
@@ -188,8 +346,19 @@ header nav li {
 .service__confiance__container .service-confiance h2 {
   color: white;
 }
+@media (min-width: 600px) {
+  .service__confiance__container .service-confiance h2 {
+    font-size: 3em;
+  }
+}
 .service__confiance__container .service__confiance__list {
   width: 100%;
+}
+@media (min-width: 600px) {
+  .service__confiance__container .service__confiance__list {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .service__confiance__container .service__confiance__list .service__list {
   height: 100px;
@@ -197,12 +366,22 @@ header nav li {
   padding-top: 20px;
   font-weight: bold;
 }
+@media (min-width: 600px) {
+  .service__confiance__container .service__confiance__list .service__list {
+    width: 100%;
+  }
+}
 .service__confiance__container .service__confiance__list .demenagement {
   background: black;
   color: white;
 }
 .service__confiance__container .service__confiance__list p {
   padding-top: 15px;
+}
+@media (min-width: 600px) {
+  .service__confiance__container .service__confiance__list p {
+    font-size: 1.5em;
+  }
 }
 .service__confiance__container .service__confiance__list .assurance {
   background: rgb(243, 71, 18);
@@ -213,13 +392,25 @@ header nav li {
   color: black;
 }
 
+@media (min-width: 600px) {
+  .satisfaction__client__container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+}
 .satisfaction__client__container h2 {
   padding-top: 20px;
   text-align: center;
 }
-.satisfaction__client__container img {
-  width: 10%;
-  padding-left: 20px;
+@media (min-width: 600px) {
+  .satisfaction__client__container h2 {
+    font-size: 4em;
+    padding-top: 100px;
+  }
 }
 
 .satisfaction__client__avis {
@@ -233,10 +424,33 @@ header nav li {
   text-align: center;
   padding-top: 10px;
 }
+@media (min-width: 600px) {
+  .satisfaction__client__avis p {
+    font-size: 1em;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+.partenaires img {
+  width: 10%;
+  padding-left: 20px;
+}
+@media (min-width: 600px) {
+  .partenaires img {
+    margin-right: 150px;
+  }
+}
 
 .devis__container {
   background: rgb(243, 71, 18);
   height: 100vh;
+}
+@media (min-width: 600px) {
+  .devis__container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
 }
 .devis__container .devis__infos {
   padding-top: 40px;
@@ -245,9 +459,26 @@ header nav li {
   text-align: center;
   color: white;
 }
+@media (min-width: 600px) {
+  .devis__container .devis__infos h2 {
+    font-size: 3em;
+    text-align: left;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+}
 .devis__container .devis__infos p {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .devis__container .devis__infos p {
+    font-size: 1.2em;
+    text-align: left;
+    width: 300px;
+    margin-left: 200px;
+  }
 }
 .devis__container .devis__formulaire {
   display: flex;
@@ -255,6 +486,18 @@ header nav li {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media (min-width: 600px) {
+  .devis__container .devis__formulaire form {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "demenage emmenagement" "date piece" "nom telephone" "button button";
+    height: 50%;
+  }
+}
+.devis__container .devis__formulaire form .emmenagement {
+  grid-area: emmenagement;
 }
 .devis__container input {
   height: 30px;
@@ -268,6 +511,13 @@ header nav li {
   position: absolute;
   left: 10px;
   width: 80%;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .devis__container #btn-submit {
+    grid-area: button;
+    position: relative;
+  }
 }
 
 footer {
@@ -324,6 +574,15 @@ main {
   font-size: 8px;
   width: 60px;
   height: 40px;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .btn-submit-devis {
+    font-size: 1em;
+    width: 300px;
+    margin-left: 235px;
+    height: 90px;
+  }
 }
 
 a {
@@ -352,6 +611,12 @@ a:hover {
   width: 2%;
   padding-right: 10px;
   padding-left: 20px;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .chevron {
+    width: 20px;
+  }
 }
 
 h5 {

@@ -9,14 +9,15 @@
 <body>
     <header>
         <div>
-            <img src="./img/logo-paul-et-fils.png" alt="logo paul et fils orange">
+            <a href="#">
+            <img src="./img/logo-paul-et-fils.png" alt="logo paul et fils orange"></a>
             <p>Paul et Fils</p>
         </div>    
         <nav>
             <ul>
                 <li> <a href="#" id="accueil">Accueil </a></li> 
                 <li> <a href="#">À propos</a></li>
-                <li> <a href="#">Services</a></li>
+                <li> <a href="./service.html">Services</a></li>
                 <li> <a href="#">Conseils</a></li>
                 <li> <a href="#">Contact</a></li>
                 <li><a href="#"><button class="btn-submit-devis">Devis gratuit</button> </a></li>
@@ -24,17 +25,21 @@
         </nav>
     </header>
     <main>
+<!-- **********SECTION MAIN CONTAINER IMAGE DE FOND *********         -->
         <section class="main-container">
             <h1>Déménager n'a jamais été aussi facile</h1>
-            <div class="container__contact">
-                <h2> APPELEZ-NOUS</h2>
-                <p>01 23 45 67 89</p>
-            </div>
-            <div class="container__devis">
-                <h2>COMMENCER EN LIGNE</h2>
-                <P>Devis gratuit en quelque secondes</P>
+            <div class="container__cont">
+                <div class="container__contact">
+                    <h2> APPELEZ-NOUS</h2>
+                    <p>01 23 45 67 89</p>
+                </div>
+                <div class="container__devis">
+                    <h2>COMMENCER EN LIGNE</h2>
+                    <P>Devis gratuit en quelque secondes</P>
+                </div>
             </div>
         </section>
+<!-- *********SECTION INTRO***************************         -->
         <section class="demenagement__introduction">
             <div class="demenagement__propos">
                 <h2>Paul et fils Déménagement</h2>
@@ -44,33 +49,39 @@
             </div>
             <img src="./img/ho——e-porte-carton.webp" alt="homme porte un carton">
         </section>
+<!-- *********SECTION ARTICLE/SERVICE******************         -->
         <section class="services">
             <h2>Nos services</h2>
-            <article class="services__description">
-                <img src="./img/2hommes-camionnette.webp" alt="2hommes a une camionnette">
-                <h3>Déménagement à proximité</h3>
-                <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-                <button class="btn_description">Lire plus</button>
-            </article>
-            <article class="services__description">
-                <img src="./img/camionnette.webp" alt="Une camionnette">
-                <h3>Déménagement longue distance</h3>
-                <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-                <button class="btn_description">Lire plus</button>
-            </article>
-            <article class="services__description">
-                <img src="./img/garage.webp" alt="garage">
-                <h3>Services de stockage</h3>
-                <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-                <button class="btn_description">Lire plus</button>
-            </article>
-            <article class="services__description">
-                <img src="./img/carton.webp" alt="emballage carton">
-                <h3>Emballer et déballer</h3>
-                <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-                <button class="btn_description">Lire plus</button>
-            </article>
+            <div class="service__service">
+                <article class="services__description">
+                    <img src="./img/2hommes-camionnette.webp" alt="2hommes a une camionnette">
+                    <div class="service__demenage">
+                    <h3>Déménagement à proximité</h3>
+                    <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
+                    <button class="btn_description">Lire plus</button>
+                    </div>
+                </article>
+                <article class="services__description">
+                    <img src="./img/camionnette.webp" alt="Une camionnette">
+                    <h3>Déménagement longue distance</h3>
+                    <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
+                    <button class="btn_description">Lire plus</button>
+                </article>
+                <article class="services__description">
+                    <img src="./img/garage.webp" alt="garage">
+                    <h3>Services de stockage</h3>
+                    <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
+                    <button class="btn_description">Lire plus</button>
+                </article>
+                <article class="services__description">
+                    <img src="./img/carton.webp" alt="emballage carton">
+                    <h3>Emballer et déballer</h3>
+                    <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
+                    <button class="btn_description">Lire plus</button>
+                </article>
+            </div>
         </section>
+<!-- **********SECTION SERVICE CONFIANCE*************         -->
         <section class="service__confiance__container">
             <div class="service-confiance">
                 <h2>Un service de confiance</h2>
@@ -90,11 +101,12 @@
                 </div>
             </div>
         </section>
+<!-- *************SECTION SATISFACTION CLIENT************         -->
         <section class="satisfaction__client__container">
             <div class="satisfaction__client">
                 <h2>Nos clients satisfaits</h2>
                 <div class="satisfaction__client__avis"><svg class="chevron ouvert"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-label="chevrons"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-                    <div>
+                    <div class="avis__client">
                         <p>« Je suis un témoignage. Cliquez ici pour me modifier et valoriser votre activité ».</p>
                         <p>Marie Garnier</p>
                     </div>
@@ -109,6 +121,7 @@
                 <img src="./img/logo-movtop.JPG" alt="logo movtop">
             </div>
         </section>
+<!-- *********SECTION DEVIS/FORMULAIRE*********************         -->
         <section class="devis__container">
             <div class="devis__infos">
                 <h2>Votre devis gratuit</h2>
@@ -116,53 +129,52 @@
             </div>
             <div class="devis__formulaire">
                 <form action="#" method="post">
-                    <ul>
+                    
                         
-                            <li class="demenage">
+                            <div class="demenage">
                                 <label for="demenage">Ville déménagement *</label>
                                 <input type="text" name="demenage" id="demenage" required aria-label="Ville déménagement">
-                            </li>
+                            </div>
                         
                         
-                            <li class="emmenagement">
+                            <div class="emmenagement">
                                 <label for="emmenagement">Ville emménagement *</label>
                                 <input type="emmenagement" name="emmenagement" id="emmenagement" required aria-label="Ville emménagement">
-                            </li>
+                            </div>
                         
                           
-                            <li class="date">
+                            <div class="date">
                                 <label for="date">Date déménagement *</label>
                                 <input type="date" id="date" name="date" placeholder="04/29/2021" required aria-label="Date déménagement"><br>
-                            </li>
+                            </div>
                         
                         
-                            <li class="piece"> <p>Nombre de pièces *</p>
+                            <div class="piece"> <p>Nombre de pièces *</p>
                                 <select name="piece">
                                    <option value="une">1</option>
                                    <option value="deux">2</option>
                                    <option value="trois">3</option>
                                    <option value="quatre">4</option> 
                                 </select>
-                            </li>
+                            </div>
                         
                         
-                            <li class="nom">
+                            <div class="nom">
                                 <label for="nom">Nom</label>
                                 <input type="text" name="nom" id="nom" placeholder="Entrez votre nom">
-                            </li>
+                            </div>
                         
                         
-                            <li class="telephone">
+                            <div class="telephone">
                                 <label for="telephone">Téléphone</label>
                                 <input type="text" name="telephone" id="telephone" placeholder="téléphone"> 
-                            </li>
+                            </div>
                         
                         
-                            <li>
+                            <div>
                                 <input type="submit" value="Envoyer" id="btn-submit" aria-label="bouton d'envoie">
-                            </li>
+                            </div>
                         </div>
-                    </ul>
                 </form>
             </div>
         </section>
