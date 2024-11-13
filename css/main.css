@@ -499,10 +499,23 @@ header nav li {
 .devis__container .devis__formulaire form .emmenagement {
   grid-area: emmenagement;
 }
+@media (min-width: 600px) {
+  .devis__container .devis__formulaire form .piece select {
+    height: 40px;
+    width: 90%;
+    margin-top: 15px;
+  }
+}
 .devis__container input {
   height: 30px;
   margin: 5px;
   border: none;
+}
+@media (min-width: 600px) {
+  .devis__container input {
+    height: 40px;
+    margin-top: 15px;
+  }
 }
 .devis__container #btn-submit {
   background: black;
@@ -517,6 +530,7 @@ header nav li {
   .devis__container #btn-submit {
     grid-area: button;
     position: relative;
+    width: 300px;
   }
 }
 
