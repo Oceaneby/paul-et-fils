@@ -1,0 +1,99 @@
+.main-container{
+    background: url('../img/homme-carton-camionnette.webp') fixed center/cover;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     height: 90vh;
+ 
+     @media (min-width: 600px) {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+        
+        
+        }
+    
+        
+       .container__cont{
+          @media (min-width: 600px) {
+             display: flex;
+             flex-direction: row;
+             width: 50%;
+             margin-left: 150px;
+             margin-top: 40px;
+               
+             h2{
+                @include main-container;
+                   @media (min-width: 600px) {
+                      font-size: 2em;
+                      padding-left: 30px;
+                      margin-top: 20px;
+                    }
+             }
+             p{
+                @include main-container;
+                @media (min-width: 600px) {
+                   font-size: 2em;
+                   font-weight: lighter;
+                   padding-left: 30px;
+                   
+                 }
+                
+             }       
+              
+              }
+       }    
+ 
+    h1{
+       color: $white;
+       font-weight: bold;
+       font-size: 1em;
+ 
+       @media (min-width: 600px) {
+          text-align: lef;
+          font-size: 4em;
+          width: 700px;
+          padding-left: 150PX;
+ 
+           
+           }
+    }
+    .container__contact{
+       font-size: 0.5em;
+       background-color: $black;
+       color: $white;
+       height: 50px;
+       width: 40%;
+       margin-top: 15px;
+ 
+       @media (min-width: 600px) {
+          height: 200px;
+           }
+ 
+     
+    }
+    .container__devis{
+     
+       font-size: 0.5em;
+       background-color: $orange;
+       height: 50px;
+       width: 40%;
+       margin-top: 15px;
+ 
+       @media (min-width: 600px) {
+          height: 200px;
+           
+           
+           }
+       p{
+          @media (min-width: 600px) {
+             width: 40%;
+             
+              }
+       }    
+    }
+ }

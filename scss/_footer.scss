@@ -1,0 +1,42 @@
+footer{
+    background: $black;
+    color: $white;
+    position: relative;
+    height: 100vh;
+    img{
+       width: 10%;
+    }
+    .logo{
+       padding-right: 350px;
+       font-size: 0.5em;
+       position: absolute;
+       left: 45px;
+       top: 5px;
+       padding-top: 0;
+     
+       
+    }
+   .footer__container{
+    height: 100px;
+    padding-left: 15px;
+    
+    address{
+       padding-top: 30px;
+   }
+   &.horaire{
+    h5{
+       margin-top: 40px;
+    }
+   }
+  } 
+  .footer__social{
+    position: absolute;
+    bottom: 0px;
+    p{
+       padding-bottom: 15px;
+       margin-top: 25px;
+       font-size: 0.5em;
+       text-align: center;
+    }
+  } 
+ }

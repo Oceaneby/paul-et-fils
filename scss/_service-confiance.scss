@@ -1,0 +1,74 @@
+.service__confiance__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+   
+ 
+ 
+ 
+    .service-confiance{
+       background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../img/2hommes-portent-un-meuble.webp) center/cover;
+       overflow: hidden;
+       width: 100%;
+       height: 50vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+       h2{
+          color: $white;
+          @media (min-width: 600px) {
+           font-size: 3em;
+             }
+      
+       }
+    }
+    .service__confiance__list{
+       width: 100%;
+ 
+ 
+       @media (min-width: 600px) {
+          display: flex;
+          flex-direction: row;
+          
+          
+        }
+ 
+       .service__list{
+          height: 100px;
+          text-align: center;
+          padding-top: 20px;
+          font-weight: bold;
+ 
+          @media (min-width: 600px) {
+             width: 100%;
+             
+             }
+      
+       }
+       .demenagement{
+          background: $black;
+          color: $white;
+       }
+       p{
+          padding-top: 15px;
+          @media (min-width: 600px) {
+             font-size: 1.5em;
+          
+           
+             }
+      
+       }
+       .assurance{
+          background: $orange;
+          color: $white;
+       }
+       .recommandation{
+          background: $white;
+          color: $black;
+       }
+    }
+ }
